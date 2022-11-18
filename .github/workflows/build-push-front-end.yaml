@@ -18,5 +18,6 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v3
       with:
+        context: .
         push: true
         tags: rosicky1491/front-end:latest, rosicky1491/front-end:${{ github.run_number}}
